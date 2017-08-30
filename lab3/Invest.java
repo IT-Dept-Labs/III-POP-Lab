@@ -13,9 +13,12 @@ public class Invest{
 		Scanner sc=new Scanner(System.in);
 		Invest o1=new Invest();
 		double amt;
+		System.out.print("Enter p: ");
 		o1.p=sc.nextInt();
+		System.out.print("Enter r: ");
 		o1.r=sc.nextDouble();
 		o1.r/=100;
+		System.out.print("Enter t: ");
 		o1.t=sc.nextInt();
 		System.out.println("Years\tAmount");
 		for(int i=1;i<=o1.t;i++){
