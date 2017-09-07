@@ -1,16 +1,12 @@
 import java.util.Scanner;
-
-public class p3{
-
+public class seq{
 	public static void main(String[] args){
-
 		int[] arr=new int[100];
 		Scanner inp=new Scanner(System.in);
 		int n,temp;
-		System.out.println("Enter the array size");
+		System.out.print("Enter the array size: ");
 		n=inp.nextInt();
-		System.out.println("Enter the array elements");
-
+		System.out.print("Enter the array elements: ");
 		for(int i=0;i<n;i++)
 			arr[i]=inp.nextInt();
 
@@ -30,23 +26,20 @@ public class p3{
 		for(int i=0;i<n;i++)
 			count[i]=0;
 
-		for(int i=0;i<n;i++){
-			if(arr[i+1]-arr[i]==1)
+		for(int i=0;i<n;i++)
+			{if(arr[i+1]-arr[i]==1)
 				count[in]++;
+
 			else
 				in++;
-		}
+			}
 
 			int max=count[0];
-			for(int i=1;i<in+1;i++){
-
-				if(max<count[i])
-					max=count[i];
+			for(int i=1;i<in+1;i++)
+			{if(max<count[i])
+				max=count[i];
 				else 
-					continue;
-			}
-			
-
+					continue;}
 				System.out.println("Length of longest sequence="+(max+1));
 	}
 

@@ -1,15 +1,25 @@
+import java.util.*;
 public class Payroll{
 	int salary;
-	public Payroll(int sal){
+	String dept;
+	public Payroll(int sal,String de){
 		salary=sal;
+		dept=de;
 	}
 	
 
 public static void main(String[] args) {
-	Payroll it=new Payroll(200000);
-	System.out.println(it.salary);
-	Payroll mech=new Payroll(25000);
-	System.out.println(mech.salary);
+	
+	Scanner sc=new Scanner(System.in);
+	System.out.print("Enter the salary for IT dept");
+	
+	int s=sc.nextInt();
+	Payroll it=new Payroll(s, "IT");
+	System.out.println(it.salary+" "+it.dept);
+	System.out.print("Enter the salary for Mech dept");
+	s=sc.nextInt();
+	Payroll mech=new Payroll(s,"Mech");
+	System.out.println(mech.salary+" "+mech.dept);
 
 }
 	

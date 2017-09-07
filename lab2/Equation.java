@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Equation{
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the coefficient of eq1:");
+		System.out.println("Enter the coefficients of eq1:");
 		double a1=sc.nextDouble();
 		double b1=sc.nextDouble();
 	    double c1=sc.nextDouble();
 
-	    System.out.println("Enter the coefficient of eq2:");
+	    System.out.println("Enter the coefficients of eq2:");
 	    double a2=sc.nextDouble();
 	    double b2=sc.nextDouble();
 	    double c2=sc.nextDouble();

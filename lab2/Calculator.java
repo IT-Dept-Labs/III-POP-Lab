@@ -19,12 +19,16 @@ public class Calculator{
 					  break;
 			case '*': result=n1*n2;
 					  break;
-			case '/': result=n1/n2;
-					  break;
-			default: result=0;
+			case '/':if(n2!=0){ 
+					result=n1/n2;
+					  break;}
+					
+			default: result=25555555;
 					  break;		  		  		   
 		}
-
+		if(result==25555555)
+			System.out.println("Invalid input ");
+		else
 		System.out.println("Result: "+result);
 
 	}
